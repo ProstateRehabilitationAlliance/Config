@@ -1,6 +1,3 @@
-info:
-  profile: dev
-foo: foo version 3
 spring:
   profiles:
     active: dev
@@ -19,7 +16,9 @@ eureka:
     serviceUrl:
       defaultZone:  http://192.168.0.222:8888/eureka/
 
-
+feign:
+  hystrix:
+    enabled: true
 
 # mybatis
 mybatis:
