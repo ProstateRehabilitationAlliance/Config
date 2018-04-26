@@ -2,9 +2,9 @@ spring:
   profiles:
     active: dev
   datasource:
-    url: jdbc:mysql://192.168.0.221:3306/pra?characterEncoding=utf-8
-    username: root
-    password: root
+    url: jdbc:mysql://www.yilaiyiwang.com:3306/pra?characterEncoding=utf-8
+    username: yilaiyiwang
+    password: ylyw20170930
     driver-class-name: com.mysql.jdbc.Driver
   cloud:
     discovery:
@@ -28,7 +28,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone:  http://192.168.0.222:8888/eureka/
+      defaultZone:  http://192.168.1.222:8888/eureka/
 
 feign:
   hystrix:
