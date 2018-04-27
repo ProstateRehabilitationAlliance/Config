@@ -1,8 +1,6 @@
 spring:
   profiles:
     active: dev
-  application:
-    name: doctor-server
   datasource:
     url: jdbc:mysql://www.yilaiyiwang.com:3306/pra?characterEncoding=utf-8
     username: yilaiyiwang
@@ -12,7 +10,6 @@ spring:
     discovery:
       enabled: true
       serviceId: eureka-server
-
   redis:
   #################redis基础配置#################
     database: 8
@@ -32,7 +29,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone:  http://192.168.1.222:8888/eureka/
-
 
 feign:
   hystrix:
