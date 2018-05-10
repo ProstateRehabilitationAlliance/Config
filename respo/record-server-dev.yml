@@ -2,9 +2,9 @@ spring:
   profiles:
     active: dev
   datasource:
-    url: jdbc:mysql://www.yilaiyiwang.com:3306/pra?characterEncoding=utf-8
-    username: yilaiyiwang
-    password: ylyw20170930
+    url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/pra?characterEncoding=utf-8
+    username: root
+    password: Qlxlm123456
     driver-class-name: com.mysql.jdbc.Driver
   cloud:
     discovery:
