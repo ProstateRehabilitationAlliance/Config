@@ -2,10 +2,26 @@ spring:
   profiles:
     active: dev
   datasource:
-    url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/pra?characterEncoding=utf-8
-    username: root
-    password: Qlxlm123456
-    driver-class-name: com.mysql.jdbc.Driver
+    write-pomr:
+      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_pomr?characterEncoding=utf-8
+      username: root
+      password: Qlxlm123456
+      driver-class-name: com.mysql.jdbc.Driver
+    write-pra:
+      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_pra?characterEncoding=utf-8
+      username: root
+      password: Qlxlm123456
+      driver-class-name: com.mysql.jdbc.Driver
+    read-pomr:
+      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_pomr?characterEncoding=utf-8
+      username: root
+      password: Qlxlm123456
+      driver-class-name: com.mysql.jdbc.Driver
+    read-pra:
+      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_pra?characterEncoding=utf-8
+      username: root
+      password: Qlxlm123456
+      driver-class-name: com.mysql.jdbc.Driver
   cloud:
     discovery:
       enabled: true
@@ -37,5 +53,4 @@ feign:
 
 # mybatis
 mybatis:
-  mapper-locations:  classpath:mapping/*/*.xml
   type-aliases-package: com.prostate.*.entity
