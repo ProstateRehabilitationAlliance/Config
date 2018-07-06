@@ -3,12 +3,12 @@ spring:
     active: dev
   datasource:
     master:
-      url: jdbc:mysql://172.21.0.16:3306/dev_master_static?characterEncoding=utf-8
+      url: jdbc:mysql://172.21.0.16:3306/prd_master_static?characterEncoding=utf-8
       username: root
       password: Qlxlm123456
       driver-class-name: com.mysql.jdbc.Driver
     slaver:
-      url: jdbc:mysql://172.21.0.16:3306/dev_master_static?characterEncoding=utf-8
+      url: jdbc:mysql://172.21.0.16:3306/prd_master_static?characterEncoding=utf-8
       username: root
       password: Qlxlm123456
       driver-class-name: com.mysql.jdbc.Driver
