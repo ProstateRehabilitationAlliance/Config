@@ -12,7 +12,6 @@ spring:
       username: root
       password: Qlxlm123456
       driver-class-name: com.mysql.jdbc.Driver
-
   cloud:
     discovery:
       enabled: true
