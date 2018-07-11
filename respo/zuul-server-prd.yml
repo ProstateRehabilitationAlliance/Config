@@ -2,7 +2,11 @@ spring:
   profiles:
     active: dev
   datasource:
-    url: jdbc:mysql://172.21.0.16:3306/pra?characterEncoding=utf-8
+#    url: jdbc:mysql://172.21.0.16:3306/pra?characterEncoding=utf-8
+#    username: root
+#    password: Qlxlm123456
+#    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/pra?characterEncoding=utf-8
     username: root
     password: Qlxlm123456
     driver-class-name: com.mysql.jdbc.Driver
