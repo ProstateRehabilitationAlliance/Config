@@ -42,3 +42,11 @@ feign:
 mybatis:
   mapper-locations:  classpath:mapping/*/*.xml
   type-aliases-package: com.prostate.*.entity
+#httpClient 配置信息
+http:
+  maxTotal: 80
+  defaultMaxPerRoute: 80
+  connectTimeout: 30000
+  connectionRequestTimeout: 30000
+  socketTimeout: 30000
+  staleConnectionCheckEnabled: true
