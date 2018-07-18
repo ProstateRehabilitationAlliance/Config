@@ -47,6 +47,6 @@ feign:
     enabled: true
 
 # mybatis
-mybatis:
-  type-aliases-package: com.prostate.*.entity
+#mybatis:
+#  type-aliases-package: com.prostate.*.entity
 
