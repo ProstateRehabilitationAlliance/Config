@@ -2,7 +2,7 @@ server:
   port: 8801
 spring:
   application:
-    name: order-server
+    name: doctor-server
   profiles:
     active: dev
   datasource:
