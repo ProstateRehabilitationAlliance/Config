@@ -1,16 +1,16 @@
 server:
-  port: 8801
+  port: 8901
 spring:
   profiles:
     active: dev
   datasource:
-    master:
-      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_user?characterEncoding=utf-8
+    writePra:
+      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_pra?characterEncoding=utf-8
       username: root
       password: Qlxlm123456
       driver-class-name: com.mysql.jdbc.Driver
-    slaver:
-      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_user?characterEncoding=utf-8
+    readPra:
+      url: jdbc:mysql://bj-cdb-0srt3yo9.sql.tencentcdb.com:63422/dev_master_pra?characterEncoding=utf-8
       username: root
       password: Qlxlm123456
       driver-class-name: com.mysql.jdbc.Driver
@@ -38,10 +38,10 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone:  http://localhost:8888/eureka/
+      defaultZone:  http://192.168.0.222:8888/eureka/
   instance:
-    preferIpAddress: true
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+      preferIpAddress: true
+      instance-id: ${spring.cloud.client.ipAddress}:${server.port}
 feign:
   hystrix:
     enabled: true
@@ -49,4 +49,3 @@ feign:
 # mybatis
 mybatis:
   type-aliases-package: com.prostate.*.entity
-
