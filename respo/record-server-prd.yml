@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: prd
   datasource:
 #    writePomr:
 #      url: jdbc:mysql://172.21.0.16:3306/prd_master_pomr?characterEncoding=utf-8
