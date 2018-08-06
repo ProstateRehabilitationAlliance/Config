@@ -35,27 +35,30 @@ zuul:
     api-a:
       path: /api-user/**
       service-id: user-server
-    api-b:
-      path: /api-record/**
-      service-id: record-server
-    api-c:
-      path: /api-assessmen/**
-      service-id: assessmen-server
-    api-d:
-      path: /api-stata/**
-      service-id: stata-server
-    api-f:
+    api-aa:
       path: /api-doctor/**
       service-id: user-server
-    api-e:
+    api-b:
       path: /api-third/**
       service-id: third-server
-    api-g:
+    api-bb:
       path: /api-file/**
       service-id: third-server
-    api-h:
-      path: /api-doctor/**
-      service-id: user-server
+    api-c:
+      path: /api-stata/**
+      service-id: stata-server
+    api-d:
+      path: /api-record/**
+      service-id: record-server
+    api-e:
+      path: /api-assessmen/**
+      service-id: assessmen-server
+    api-f:
+      path: /api-order/**
+      service-id: order-server
+    api-g:
+      path: /api-wallet/**
+      service-id: wallet-server
 ribbon:
   ReadTimeout: 40000
   ConnectTimeout: 40000
