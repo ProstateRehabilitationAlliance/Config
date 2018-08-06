@@ -33,8 +33,8 @@ eureka:
 zuul:
   routes:
     api-a:
-      path: /api-doctor/**
-      service-id: doctor-server
+      path: /api-user/**
+      service-id: user-server
     api-b:
       path: /api-record/**
       service-id: record-server
@@ -44,9 +44,18 @@ zuul:
     api-d:
       path: /api-stata/**
       service-id: stata-server
+    api-f:
+      path: /api-doctor/**
+      service-id: user-server
     api-e:
+      path: /api-third/**
+      service-id: third-server
+    api-g:
       path: /api-file/**
-      service-id: file-server
+      service-id: third-server
+    api-h:
+      path: /api-doctor/**
+      service-id: user-server
 ribbon:
   ReadTimeout: 40000
   ConnectTimeout: 40000
