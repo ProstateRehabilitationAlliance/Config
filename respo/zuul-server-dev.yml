@@ -59,6 +59,15 @@ zuul:
     api-g:
       path: /api-wallet/**
       service-id: wallet-server
+    api-h:
+      path: /api-goods/**
+      service-id: goods-server
+    api-i:
+      path: /api-archive/**
+      service-id: archive-server
+    api-j:
+      path: /api-statistic/**
+      service-id: statistic-server
 ribbon:
   ReadTimeout: 40000
   ConnectTimeout: 40000
